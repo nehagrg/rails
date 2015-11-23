@@ -20,11 +20,11 @@ class HomeController < ApplicationController
   def update
   end
   def  updatedata
-    @customer =Customer.find(params[:id])
+    @customer = Customer.find(params[:id])
   end
   def updatefile
-  	@customer =Customer.find(params[:id])
-  	@customer=Customer.update(:name=>params[:name])
+  	@customer = Customer.find(params[:id])
+  	@customer.update(:id=>params[:id],:name=>params[:name])
   end	
 
 
