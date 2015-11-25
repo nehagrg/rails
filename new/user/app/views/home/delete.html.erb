@@ -1,0 +1,9 @@
+<%= form_for @employee,url: { action: "delete_user"}, htnl: {class: "employee"} do|e| %>
+  <%= e.label :name %>
+  <%= e.text_field :name %>
+  <%= e.radio_button :gender,"male" %>
+  <%= e.label :male %>
+  <%= e.radio_button :gender,"female" %>
+  <%= e.label :female %>
+  <%= e.submit :delete_user %>
+<% end %>

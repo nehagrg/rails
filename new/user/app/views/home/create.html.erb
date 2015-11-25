@@ -1,0 +1,9 @@
+<%= form_for @employee,url: { action: "create_user"}, htnl: {class: "employee"} do|e| %>
+  <%= e.label :name %>
+  <%= e.text_field :name %>
+  <%= e.radio_button :gender,"male" %>
+  <%= e.label :male %>
+  <%= e.radio_button :gender,"female" %>
+  <%= e.label :female %>
+  <%= e.submit :create_user %>
+<% end %>    

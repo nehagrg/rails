@@ -1,0 +1,10 @@
+<%= form_for @employee,url: { action: "update_complete"}, htnl: {class: "employee"} do|e| %>
+  <%= e.label :name %>
+  <%= e.text_field :name %>
+  <%= e.hidden_field :id %>
+  <%= e.radio_button :gender,"male" %>
+  <%= e.label :male %>
+  <%= e.radio_button :gender,"female" %>
+  <%= e.label :female %>
+  <%= e.submit :update_complete %>
+<% end %>

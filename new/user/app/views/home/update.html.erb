@@ -1,0 +1,5 @@
+<%= form_for @employee,url: { action: "update_user"}, htnl: {class: "employee"} do|e| %>
+  <%= e.label :id %>
+  <%= e.text_field :id %>
+  <%= e.submit :update_user %>
+<% end %>
